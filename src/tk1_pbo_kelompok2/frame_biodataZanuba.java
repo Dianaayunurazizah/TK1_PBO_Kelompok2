@@ -117,6 +117,8 @@ public class frame_biodataZanuba extends javax.swing.JFrame {
         jLabel44 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMinimumSize(new java.awt.Dimension(1150, 730));
+        setPreferredSize(new java.awt.Dimension(1150, 730));
 
         jPanel1.setBackground(new java.awt.Color(1, 57, 111));
         jPanel1.setPreferredSize(new java.awt.Dimension(1150, 85));
@@ -164,6 +166,8 @@ public class frame_biodataZanuba extends javax.swing.JFrame {
 
         getContentPane().add(jPanel1, java.awt.BorderLayout.PAGE_START);
 
+        jPanel2.setMinimumSize(new java.awt.Dimension(1150, 645));
+        jPanel2.setPreferredSize(new java.awt.Dimension(1150, 645));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         panelNama.setBackground(new java.awt.Color(230, 244, 253));
@@ -209,7 +213,7 @@ public class frame_biodataZanuba extends javax.swing.JFrame {
                         .addContainerGap()
                         .addComponent(jLabel46, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel41, javax.swing.GroupLayout.DEFAULT_SIZE, 272, Short.MAX_VALUE)
+                        .addComponent(jLabel41, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel45, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(panelNamaLayout.createSequentialGroup()

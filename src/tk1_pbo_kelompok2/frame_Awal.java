@@ -44,6 +44,7 @@ public class frame_Awal extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(1150, 730));
 
         jPanel1.setBackground(new java.awt.Color(1, 57, 111));
         jPanel1.setMinimumSize(new java.awt.Dimension(1150, 730));
@@ -120,9 +121,9 @@ public class frame_Awal extends javax.swing.JFrame {
                 .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(58, 58, 58)
                 .addComponent(btnMasuk, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(275, 275, 275)
+                .addGap(254, 254, 254)
                 .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18))
+                .addGap(21, 21, 21))
         );
 
         getContentPane().add(jPanel1, java.awt.BorderLayout.CENTER);
