@@ -4,6 +4,11 @@
  */
 package tk1_pbo_kelompok2;
 
+import com.formdev.flatlaf.ui.FlatLineBorder;
+import java.awt.Color;
+import java.awt.Insets;
+import javax.swing.JPanel;
+
 /**
  *
  * @author Acer
@@ -17,6 +22,25 @@ public class frame_biodataJaya extends javax.swing.JFrame {
      */
     public frame_biodataJaya() {
         initComponents();
+        
+        
+        panelRounded(panelNama);
+        panelRounded(panelBiodata);
+        panelRounded(panelKegemaran);
+        panelRounded(panelKeterampilan);
+        panelRounded(panelGithub);
+        panelRounded(panelPeran);
+        panelRounded(panelHobbi1);
+        panelRounded(panelSkill1);
+        panelRounded(panelSkill2);
+    }
+    
+    
+    public void panelRounded(JPanel panel){
+        
+        panel.setBorder(new FlatLineBorder(
+                new Insets(0, 0, 0, 0), new Color(255, 255, 255), 1f, 20
+        ));
     }
 
     /**
@@ -33,15 +57,15 @@ public class frame_biodataJaya extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
-        jPanel5 = new javax.swing.JPanel();
+        panelNama = new javax.swing.JPanel();
         jLabel42 = new javax.swing.JLabel();
-        jPanel13 = new javax.swing.JPanel();
+        panelPeran = new javax.swing.JPanel();
         jLabel43 = new javax.swing.JLabel();
         jLabel44 = new javax.swing.JLabel();
         jLabel47 = new javax.swing.JLabel();
         jLabel48 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
-        jPanel6 = new javax.swing.JPanel();
+        btnKembali = new javax.swing.JButton();
+        panelBiodata = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         jPanel9 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
@@ -77,18 +101,18 @@ public class frame_biodataJaya extends javax.swing.JFrame {
         jLabel33 = new javax.swing.JLabel();
         jLabel34 = new javax.swing.JLabel();
         jPanel7 = new javax.swing.JPanel();
-        jPanel8 = new javax.swing.JPanel();
+        panelKegemaran = new javax.swing.JPanel();
         jLabel37 = new javax.swing.JLabel();
-        jPanel14 = new javax.swing.JPanel();
+        panelHobbi1 = new javax.swing.JPanel();
         jLabel49 = new javax.swing.JLabel();
-        jPanel15 = new javax.swing.JPanel();
+        panelKeterampilan = new javax.swing.JPanel();
         jLabel36 = new javax.swing.JLabel();
-        jPanel16 = new javax.swing.JPanel();
+        panelSkill1 = new javax.swing.JPanel();
         jLabel50 = new javax.swing.JLabel();
         jPanel17 = new javax.swing.JPanel();
-        jPanel20 = new javax.swing.JPanel();
+        panelSkill2 = new javax.swing.JPanel();
         jLabel52 = new javax.swing.JLabel();
-        jPanel18 = new javax.swing.JPanel();
+        panelGithub = new javax.swing.JPanel();
         jLabel35 = new javax.swing.JLabel();
         jLabel38 = new javax.swing.JLabel();
         jLabel51 = new javax.swing.JLabel();
@@ -143,29 +167,29 @@ public class frame_biodataJaya extends javax.swing.JFrame {
 
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel5.setBackground(new java.awt.Color(230, 244, 253));
-        jPanel5.setMinimumSize(new java.awt.Dimension(335, 486));
+        panelNama.setBackground(new java.awt.Color(230, 244, 253));
+        panelNama.setMinimumSize(new java.awt.Dimension(335, 486));
 
         jLabel42.setFont(new java.awt.Font("Poppins Medium", 1, 20)); // NOI18N
         jLabel42.setText("Jaya Ageng Sapuro");
 
-        jPanel13.setBackground(new java.awt.Color(0, 130, 229));
+        panelPeran.setBackground(new java.awt.Color(0, 130, 229));
 
         jLabel43.setFont(new java.awt.Font("Poppins Medium", 0, 14)); // NOI18N
         jLabel43.setForeground(new java.awt.Color(255, 255, 255));
         jLabel43.setText("Anggota");
 
-        javax.swing.GroupLayout jPanel13Layout = new javax.swing.GroupLayout(jPanel13);
-        jPanel13.setLayout(jPanel13Layout);
-        jPanel13Layout.setHorizontalGroup(
-            jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel13Layout.createSequentialGroup()
+        javax.swing.GroupLayout panelPeranLayout = new javax.swing.GroupLayout(panelPeran);
+        panelPeran.setLayout(panelPeranLayout);
+        panelPeranLayout.setHorizontalGroup(
+            panelPeranLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelPeranLayout.createSequentialGroup()
                 .addContainerGap(20, Short.MAX_VALUE)
                 .addComponent(jLabel43)
                 .addGap(18, 18, 18))
         );
-        jPanel13Layout.setVerticalGroup(
-            jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        panelPeranLayout.setVerticalGroup(
+            panelPeranLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jLabel43, javax.swing.GroupLayout.DEFAULT_SIZE, 34, Short.MAX_VALUE)
         );
 
@@ -176,37 +200,37 @@ public class frame_biodataJaya extends javax.swing.JFrame {
 
         jLabel48.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tksatu_kel2/icon/petik kiri.png"))); // NOI18N
 
-        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
-        jPanel5.setLayout(jPanel5Layout);
-        jPanel5Layout.setHorizontalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel5Layout.createSequentialGroup()
+        javax.swing.GroupLayout panelNamaLayout = new javax.swing.GroupLayout(panelNama);
+        panelNama.setLayout(panelNamaLayout);
+        panelNamaLayout.setHorizontalGroup(
+            panelNamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelNamaLayout.createSequentialGroup()
+                .addGroup(panelNamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panelNamaLayout.createSequentialGroup()
+                        .addGroup(panelNamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(panelNamaLayout.createSequentialGroup()
                                 .addContainerGap()
                                 .addComponent(jLabel48, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(76, 76, 76)
-                                .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel5Layout.createSequentialGroup()
+                                .addComponent(panelPeran, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(panelNamaLayout.createSequentialGroup()
                                 .addGap(21, 21, 21)
                                 .addComponent(jLabel44)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel47, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel5Layout.createSequentialGroup()
+                    .addGroup(panelNamaLayout.createSequentialGroup()
                         .addGap(60, 60, 60)
                         .addComponent(jLabel42)))
                 .addContainerGap(48, Short.MAX_VALUE))
         );
-        jPanel5Layout.setVerticalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
+        panelNamaLayout.setVerticalGroup(
+            panelNamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelNamaLayout.createSequentialGroup()
                 .addGap(11, 11, 11)
                 .addComponent(jLabel42)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(panelNamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(panelPeran, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel48)
                     .addComponent(jLabel47))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -214,16 +238,16 @@ public class frame_biodataJaya extends javax.swing.JFrame {
                 .addContainerGap(371, Short.MAX_VALUE))
         );
 
-        jPanel4.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 466, 330, 140));
+        jPanel4.add(panelNama, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 466, 330, 140));
 
-        jButton2.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tksatu_kel2/icon/arrow left.png"))); // NOI18N
-        jButton2.setText("Kembali ke Daftar");
-        jButton2.setIconTextGap(15);
-        jButton2.addActionListener(this::jButton2ActionPerformed);
-        jPanel4.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 40, 320, 50));
+        btnKembali.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
+        btnKembali.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tksatu_kel2/icon/arrow left.png"))); // NOI18N
+        btnKembali.setText("Kembali ke Daftar");
+        btnKembali.setIconTextGap(15);
+        btnKembali.addActionListener(this::btnKembaliActionPerformed);
+        jPanel4.add(btnKembali, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 40, 320, 50));
 
-        jPanel6.setBackground(new java.awt.Color(255, 255, 255));
+        panelBiodata.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel4.setFont(new java.awt.Font("Poppins Medium", 1, 36)); // NOI18N
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tksatu_kel2/icon/user besar.png"))); // NOI18N
@@ -379,16 +403,16 @@ public class frame_biodataJaya extends javax.swing.JFrame {
         jLabel34.setText("Ds. TekenGlagahan Kec. Loceret");
         jPanel11.add(jLabel34);
 
-        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
-        jPanel6.setLayout(jPanel6Layout);
-        jPanel6Layout.setHorizontalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel6Layout.createSequentialGroup()
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel6Layout.createSequentialGroup()
+        javax.swing.GroupLayout panelBiodataLayout = new javax.swing.GroupLayout(panelBiodata);
+        panelBiodata.setLayout(panelBiodataLayout);
+        panelBiodataLayout.setHorizontalGroup(
+            panelBiodataLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelBiodataLayout.createSequentialGroup()
+                .addGroup(panelBiodataLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panelBiodataLayout.createSequentialGroup()
                         .addGap(25, 25, 25)
                         .addComponent(jLabel4))
-                    .addGroup(jPanel6Layout.createSequentialGroup()
+                    .addGroup(panelBiodataLayout.createSequentialGroup()
                         .addGap(43, 43, 43)
                         .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -397,99 +421,99 @@ public class frame_biodataJaya extends javax.swing.JFrame {
                         .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(43, Short.MAX_VALUE))
         );
-        jPanel6Layout.setVerticalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel6Layout.createSequentialGroup()
+        panelBiodataLayout.setVerticalGroup(
+            panelBiodataLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelBiodataLayout.createSequentialGroup()
                 .addGap(25, 25, 25)
                 .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(panelBiodataLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, 427, Short.MAX_VALUE)
                     .addComponent(jPanel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(39, Short.MAX_VALUE))
         );
 
-        jPanel4.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 40, 470, 570));
+        jPanel4.add(panelBiodata, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 40, 470, 570));
 
         jPanel7.setLayout(new java.awt.GridLayout(3, 1, 0, 16));
 
-        jPanel8.setBackground(new java.awt.Color(255, 255, 255));
+        panelKegemaran.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel37.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
         jLabel37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tksatu_kel2/icon/hobby.png"))); // NOI18N
         jLabel37.setText("Kegemaran");
         jLabel37.setIconTextGap(10);
 
-        jPanel14.setBackground(new java.awt.Color(224, 247, 250));
+        panelHobbi1.setBackground(new java.awt.Color(224, 247, 250));
 
         jLabel49.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
         jLabel49.setText("Healing & Racing");
 
-        javax.swing.GroupLayout jPanel14Layout = new javax.swing.GroupLayout(jPanel14);
-        jPanel14.setLayout(jPanel14Layout);
-        jPanel14Layout.setHorizontalGroup(
-            jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel14Layout.createSequentialGroup()
+        javax.swing.GroupLayout panelHobbi1Layout = new javax.swing.GroupLayout(panelHobbi1);
+        panelHobbi1.setLayout(panelHobbi1Layout);
+        panelHobbi1Layout.setHorizontalGroup(
+            panelHobbi1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelHobbi1Layout.createSequentialGroup()
                 .addGap(15, 15, 15)
                 .addComponent(jLabel49)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        jPanel14Layout.setVerticalGroup(
-            jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel14Layout.createSequentialGroup()
+        panelHobbi1Layout.setVerticalGroup(
+            panelHobbi1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelHobbi1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel49)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
-        jPanel8.setLayout(jPanel8Layout);
-        jPanel8Layout.setHorizontalGroup(
-            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
+        javax.swing.GroupLayout panelKegemaranLayout = new javax.swing.GroupLayout(panelKegemaran);
+        panelKegemaran.setLayout(panelKegemaranLayout);
+        panelKegemaranLayout.setHorizontalGroup(
+            panelKegemaranLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelKegemaranLayout.createSequentialGroup()
                 .addContainerGap(32, Short.MAX_VALUE)
-                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(panelKegemaranLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel37)
-                    .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(panelHobbi1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(39, 39, 39))
         );
-        jPanel8Layout.setVerticalGroup(
-            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel8Layout.createSequentialGroup()
+        panelKegemaranLayout.setVerticalGroup(
+            panelKegemaranLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelKegemaranLayout.createSequentialGroup()
                 .addGap(14, 14, 14)
                 .addComponent(jLabel37)
                 .addGap(18, 18, 18)
-                .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(panelHobbi1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(95, Short.MAX_VALUE))
         );
 
-        jPanel7.add(jPanel8);
+        jPanel7.add(panelKegemaran);
 
-        jPanel15.setBackground(new java.awt.Color(255, 255, 255));
+        panelKeterampilan.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel36.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
         jLabel36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tksatu_kel2/icon/star.png"))); // NOI18N
         jLabel36.setText("Keterampilan");
         jLabel36.setIconTextGap(10);
 
-        jPanel16.setBackground(new java.awt.Color(224, 247, 250));
+        panelSkill1.setBackground(new java.awt.Color(224, 247, 250));
 
         jLabel50.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
         jLabel50.setText("Gaming");
 
-        javax.swing.GroupLayout jPanel16Layout = new javax.swing.GroupLayout(jPanel16);
-        jPanel16.setLayout(jPanel16Layout);
-        jPanel16Layout.setHorizontalGroup(
-            jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel16Layout.createSequentialGroup()
+        javax.swing.GroupLayout panelSkill1Layout = new javax.swing.GroupLayout(panelSkill1);
+        panelSkill1.setLayout(panelSkill1Layout);
+        panelSkill1Layout.setHorizontalGroup(
+            panelSkill1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelSkill1Layout.createSequentialGroup()
                 .addContainerGap(25, Short.MAX_VALUE)
                 .addComponent(jLabel50)
                 .addGap(26, 26, 26))
         );
-        jPanel16Layout.setVerticalGroup(
-            jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel16Layout.createSequentialGroup()
+        panelSkill1Layout.setVerticalGroup(
+            panelSkill1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelSkill1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel50)
                 .addContainerGap())
@@ -501,70 +525,74 @@ public class frame_biodataJaya extends javax.swing.JFrame {
         jPanel17.setLayout(jPanel17Layout);
         jPanel17Layout.setHorizontalGroup(
             jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGap(0, 25, Short.MAX_VALUE)
         );
         jPanel17Layout.setVerticalGroup(
             jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 0, Short.MAX_VALUE)
         );
 
-        jPanel20.setBackground(new java.awt.Color(224, 247, 250));
+        panelSkill2.setBackground(new java.awt.Color(224, 247, 250));
 
         jLabel52.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
         jLabel52.setText("Memasak");
 
-        javax.swing.GroupLayout jPanel20Layout = new javax.swing.GroupLayout(jPanel20);
-        jPanel20.setLayout(jPanel20Layout);
-        jPanel20Layout.setHorizontalGroup(
-            jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel20Layout.createSequentialGroup()
+        javax.swing.GroupLayout panelSkill2Layout = new javax.swing.GroupLayout(panelSkill2);
+        panelSkill2.setLayout(panelSkill2Layout);
+        panelSkill2Layout.setHorizontalGroup(
+            panelSkill2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelSkill2Layout.createSequentialGroup()
                 .addGap(0, 12, Short.MAX_VALUE)
                 .addComponent(jLabel52, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
-        jPanel20Layout.setVerticalGroup(
-            jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel20Layout.createSequentialGroup()
+        panelSkill2Layout.setVerticalGroup(
+            panelSkill2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelSkill2Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel52)
                 .addContainerGap())
         );
 
-        javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
-        jPanel15.setLayout(jPanel15Layout);
-        jPanel15Layout.setHorizontalGroup(
-            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel15Layout.createSequentialGroup()
-                .addContainerGap(41, Short.MAX_VALUE)
-                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel36, javax.swing.GroupLayout.DEFAULT_SIZE, 130, Short.MAX_VALUE)
-                    .addGroup(jPanel15Layout.createSequentialGroup()
-                        .addComponent(jPanel20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jPanel17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(29, 29, 29))
+        javax.swing.GroupLayout panelKeterampilanLayout = new javax.swing.GroupLayout(panelKeterampilan);
+        panelKeterampilan.setLayout(panelKeterampilanLayout);
+        panelKeterampilanLayout.setHorizontalGroup(
+            panelKeterampilanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelKeterampilanLayout.createSequentialGroup()
+                .addContainerGap(17, Short.MAX_VALUE)
+                .addGroup(panelKeterampilanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelKeterampilanLayout.createSequentialGroup()
+                        .addGroup(panelKeterampilanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(panelKeterampilanLayout.createSequentialGroup()
+                                .addComponent(panelSkill2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(panelSkill1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(29, 29, 29))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelKeterampilanLayout.createSequentialGroup()
+                        .addComponent(jLabel36)
+                        .addGap(39, 39, 39))))
         );
-        jPanel15Layout.setVerticalGroup(
-            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel15Layout.createSequentialGroup()
+        panelKeterampilanLayout.setVerticalGroup(
+            panelKeterampilanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelKeterampilanLayout.createSequentialGroup()
                 .addGap(15, 15, 15)
                 .addComponent(jLabel36)
                 .addGap(18, 18, 18)
-                .addComponent(jPanel16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel15Layout.createSequentialGroup()
+                .addComponent(panelSkill1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(panelKeterampilanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panelKeterampilanLayout.createSequentialGroup()
                         .addGap(43, 43, 43)
                         .addComponent(jPanel17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGap(86, 86, 86))
-                    .addGroup(jPanel15Layout.createSequentialGroup()
+                    .addGroup(panelKeterampilanLayout.createSequentialGroup()
                         .addGap(18, 18, 18)
-                        .addComponent(jPanel20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(panelSkill2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
 
-        jPanel7.add(jPanel15);
+        jPanel7.add(panelKeterampilan);
 
-        jPanel18.setBackground(new java.awt.Color(255, 255, 255));
+        panelGithub.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel35.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
         jLabel35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tksatu_kel2/icon/github.png"))); // NOI18N
@@ -573,22 +601,22 @@ public class frame_biodataJaya extends javax.swing.JFrame {
 
         jLabel38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tksatu_kel2/icon/qr jaya.png"))); // NOI18N
 
-        javax.swing.GroupLayout jPanel18Layout = new javax.swing.GroupLayout(jPanel18);
-        jPanel18.setLayout(jPanel18Layout);
-        jPanel18Layout.setHorizontalGroup(
-            jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel18Layout.createSequentialGroup()
+        javax.swing.GroupLayout panelGithubLayout = new javax.swing.GroupLayout(panelGithub);
+        panelGithub.setLayout(panelGithubLayout);
+        panelGithubLayout.setHorizontalGroup(
+            panelGithubLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelGithubLayout.createSequentialGroup()
                 .addContainerGap(32, Short.MAX_VALUE)
                 .addComponent(jLabel38, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(30, 30, 30))
-            .addGroup(jPanel18Layout.createSequentialGroup()
+            .addGroup(panelGithubLayout.createSequentialGroup()
                 .addGap(44, 44, 44)
                 .addComponent(jLabel35)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        jPanel18Layout.setVerticalGroup(
-            jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel18Layout.createSequentialGroup()
+        panelGithubLayout.setVerticalGroup(
+            panelGithubLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelGithubLayout.createSequentialGroup()
                 .addGap(8, 8, 8)
                 .addComponent(jLabel35)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -596,7 +624,7 @@ public class frame_biodataJaya extends javax.swing.JFrame {
                 .addContainerGap(14, Short.MAX_VALUE))
         );
 
-        jPanel7.add(jPanel18);
+        jPanel7.add(panelGithub);
 
         jPanel4.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 40, 200, 570));
 
@@ -606,11 +634,15 @@ public class frame_biodataJaya extends javax.swing.JFrame {
         getContentPane().add(jPanel4, java.awt.BorderLayout.CENTER);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void btnKembaliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnKembaliActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+        new frame_Dashboard().setVisible(true);
+        
+        dispose();
+    }//GEN-LAST:event_btnKembaliActionPerformed
 
     /**
      * @param args the command line arguments
@@ -638,7 +670,7 @@ public class frame_biodataJaya extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton btnKembali;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -689,18 +721,18 @@ public class frame_biodataJaya extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
-    private javax.swing.JPanel jPanel13;
-    private javax.swing.JPanel jPanel14;
-    private javax.swing.JPanel jPanel15;
-    private javax.swing.JPanel jPanel16;
     private javax.swing.JPanel jPanel17;
-    private javax.swing.JPanel jPanel18;
-    private javax.swing.JPanel jPanel20;
     private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
-    private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
-    private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
+    private javax.swing.JPanel panelBiodata;
+    private javax.swing.JPanel panelGithub;
+    private javax.swing.JPanel panelHobbi1;
+    private javax.swing.JPanel panelKegemaran;
+    private javax.swing.JPanel panelKeterampilan;
+    private javax.swing.JPanel panelNama;
+    private javax.swing.JPanel panelPeran;
+    private javax.swing.JPanel panelSkill1;
+    private javax.swing.JPanel panelSkill2;
     // End of variables declaration//GEN-END:variables
 }
