@@ -4,6 +4,13 @@
  */
 package tk1_pbo_kelompok2;
 
+import com.formdev.flatlaf.FlatLightLaf;
+import com.formdev.flatlaf.ui.FlatLineBorder;
+import java.awt.Color;
+import java.awt.Insets;
+import javax.swing.JPanel;
+import javax.swing.UIManager;
+import javax.swing.UnsupportedLookAndFeelException;
 /**
  *
  * @author Acer
@@ -17,6 +24,24 @@ public class frame_biodataDiana extends javax.swing.JFrame {
      */
     public frame_biodataDiana() {
         initComponents();
+        
+        panelRounded(panelNama);
+        panelRounded(panelBiodata);
+        panelRounded(panelKegemaran);
+        panelRounded(panelKeterampilan);
+        panelRounded(panelGithub);
+        panelRounded(panelPeran);
+        panelRounded(panelHobi1);
+        panelRounded(panelHobi2);
+        panelRounded(panelSkil1);
+        panelRounded(panelSkil2);
+        
+    }
+    public void panelRounded(JPanel panel){
+        
+        panel.setBorder(new FlatLineBorder(
+                new Insets(0, 0, 0, 0), new Color(255, 255, 255), 1f, 20
+        ));
     }
 
     /**
@@ -33,15 +58,15 @@ public class frame_biodataDiana extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jPanel8 = new javax.swing.JPanel();
-        jPanel9 = new javax.swing.JPanel();
+        panelNama = new javax.swing.JPanel();
         jLabel52 = new javax.swing.JLabel();
-        jPanel15 = new javax.swing.JPanel();
+        panelPeran = new javax.swing.JPanel();
         jLabel53 = new javax.swing.JLabel();
         jLabel54 = new javax.swing.JLabel();
         jLabel55 = new javax.swing.JLabel();
         jLabel56 = new javax.swing.JLabel();
-        jButton4 = new javax.swing.JButton();
-        jPanel10 = new javax.swing.JPanel();
+        btnKembali = new javax.swing.JButton();
+        panelBiodata = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         jPanel11 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
@@ -77,20 +102,20 @@ public class frame_biodataDiana extends javax.swing.JFrame {
         jLabel33 = new javax.swing.JLabel();
         jLabel34 = new javax.swing.JLabel();
         jPanel17 = new javax.swing.JPanel();
-        jPanel18 = new javax.swing.JPanel();
+        panelKegemaran = new javax.swing.JPanel();
         jLabel37 = new javax.swing.JLabel();
-        jPanel19 = new javax.swing.JPanel();
+        panelHobi2 = new javax.swing.JPanel();
         jLabel57 = new javax.swing.JLabel();
-        jPanel20 = new javax.swing.JPanel();
+        panelHobi1 = new javax.swing.JPanel();
         jLabel58 = new javax.swing.JLabel();
-        jPanel21 = new javax.swing.JPanel();
+        panelKeterampilan = new javax.swing.JPanel();
         jLabel36 = new javax.swing.JLabel();
-        jPanel22 = new javax.swing.JPanel();
+        panelSkil1 = new javax.swing.JPanel();
         jLabel59 = new javax.swing.JLabel();
         jPanel23 = new javax.swing.JPanel();
-        jPanel24 = new javax.swing.JPanel();
+        panelSkil2 = new javax.swing.JPanel();
         jLabel60 = new javax.swing.JLabel();
-        jPanel25 = new javax.swing.JPanel();
+        panelGithub = new javax.swing.JPanel();
         jLabel35 = new javax.swing.JLabel();
         jLabel38 = new javax.swing.JLabel();
         jLabel61 = new javax.swing.JLabel();
@@ -143,31 +168,33 @@ public class frame_biodataDiana extends javax.swing.JFrame {
 
         getContentPane().add(jPanel1, java.awt.BorderLayout.PAGE_START);
 
+        jPanel8.setMinimumSize(new java.awt.Dimension(1150, 645));
+        jPanel8.setPreferredSize(new java.awt.Dimension(1150, 645));
         jPanel8.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel9.setBackground(new java.awt.Color(230, 244, 253));
-        jPanel9.setMinimumSize(new java.awt.Dimension(335, 486));
+        panelNama.setBackground(new java.awt.Color(230, 244, 253));
+        panelNama.setMinimumSize(new java.awt.Dimension(335, 486));
 
         jLabel52.setFont(new java.awt.Font("Poppins Medium", 1, 20)); // NOI18N
         jLabel52.setText("Diana Ayu Nur Azizah");
 
-        jPanel15.setBackground(new java.awt.Color(0, 130, 229));
+        panelPeran.setBackground(new java.awt.Color(0, 130, 229));
 
         jLabel53.setFont(new java.awt.Font("Poppins Medium", 0, 14)); // NOI18N
         jLabel53.setForeground(new java.awt.Color(255, 255, 255));
         jLabel53.setText("Ketua Kelompok");
 
-        javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
-        jPanel15.setLayout(jPanel15Layout);
-        jPanel15Layout.setHorizontalGroup(
-            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel15Layout.createSequentialGroup()
+        javax.swing.GroupLayout panelPeranLayout = new javax.swing.GroupLayout(panelPeran);
+        panelPeran.setLayout(panelPeranLayout);
+        panelPeranLayout.setHorizontalGroup(
+            panelPeranLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelPeranLayout.createSequentialGroup()
                 .addContainerGap(20, Short.MAX_VALUE)
                 .addComponent(jLabel53)
                 .addGap(18, 18, 18))
         );
-        jPanel15Layout.setVerticalGroup(
-            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        panelPeranLayout.setVerticalGroup(
+            panelPeranLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jLabel53, javax.swing.GroupLayout.DEFAULT_SIZE, 34, Short.MAX_VALUE)
         );
 
@@ -178,59 +205,59 @@ public class frame_biodataDiana extends javax.swing.JFrame {
 
         jLabel56.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tksatu_kel2/icon/petik kiri.png"))); // NOI18N
 
-        javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
-        jPanel9.setLayout(jPanel9Layout);
-        jPanel9Layout.setHorizontalGroup(
-            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel9Layout.createSequentialGroup()
-                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel9Layout.createSequentialGroup()
+        javax.swing.GroupLayout panelNamaLayout = new javax.swing.GroupLayout(panelNama);
+        panelNama.setLayout(panelNamaLayout);
+        panelNamaLayout.setHorizontalGroup(
+            panelNamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelNamaLayout.createSequentialGroup()
+                .addGroup(panelNamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panelNamaLayout.createSequentialGroup()
                         .addGap(35, 35, 35)
                         .addComponent(jLabel56, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel9Layout.createSequentialGroup()
+                        .addGroup(panelNamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(panelNamaLayout.createSequentialGroup()
                                 .addGap(47, 47, 47)
-                                .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(panelPeran, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(33, 33, 33))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel9Layout.createSequentialGroup()
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelNamaLayout.createSequentialGroup()
                                 .addComponent(jLabel54)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
                         .addComponent(jLabel55, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel9Layout.createSequentialGroup()
+                    .addGroup(panelNamaLayout.createSequentialGroup()
                         .addGap(60, 60, 60)
                         .addComponent(jLabel52)))
                 .addContainerGap(45, Short.MAX_VALUE))
         );
-        jPanel9Layout.setVerticalGroup(
-            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel9Layout.createSequentialGroup()
+        panelNamaLayout.setVerticalGroup(
+            panelNamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelNamaLayout.createSequentialGroup()
                 .addGap(11, 11, 11)
                 .addComponent(jLabel52)
-                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel9Layout.createSequentialGroup()
+                .addGroup(panelNamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panelNamaLayout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(panelPeran, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel54, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel9Layout.createSequentialGroup()
+                    .addGroup(panelNamaLayout.createSequentialGroup()
                         .addGap(42, 42, 42)
                         .addComponent(jLabel55, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel9Layout.createSequentialGroup()
+                    .addGroup(panelNamaLayout.createSequentialGroup()
                         .addGap(43, 43, 43)
                         .addComponent(jLabel56, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(371, Short.MAX_VALUE))
         );
 
-        jPanel8.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 466, 330, 140));
+        jPanel8.add(panelNama, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 466, 330, 140));
 
-        jButton4.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tksatu_kel2/icon/arrow left.png"))); // NOI18N
-        jButton4.setText("Kembali ke Daftar");
-        jButton4.setIconTextGap(15);
-        jButton4.addActionListener(this::jButton4ActionPerformed);
-        jPanel8.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 40, 320, 50));
+        btnKembali.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
+        btnKembali.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tksatu_kel2/icon/arrow left.png"))); // NOI18N
+        btnKembali.setText("Kembali ke Daftar");
+        btnKembali.setIconTextGap(15);
+        btnKembali.addActionListener(this::btnKembaliActionPerformed);
+        jPanel8.add(btnKembali, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 40, 320, 50));
 
-        jPanel10.setBackground(new java.awt.Color(255, 255, 255));
+        panelBiodata.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel4.setFont(new java.awt.Font("Poppins Medium", 1, 36)); // NOI18N
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tksatu_kel2/icon/user besar.png"))); // NOI18N
@@ -386,16 +413,16 @@ public class frame_biodataDiana extends javax.swing.JFrame {
         jLabel34.setText("Ds. Jatigreges, Kec. Pace");
         jPanel16.add(jLabel34);
 
-        javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
-        jPanel10.setLayout(jPanel10Layout);
-        jPanel10Layout.setHorizontalGroup(
-            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel10Layout.createSequentialGroup()
-                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel10Layout.createSequentialGroup()
+        javax.swing.GroupLayout panelBiodataLayout = new javax.swing.GroupLayout(panelBiodata);
+        panelBiodata.setLayout(panelBiodataLayout);
+        panelBiodataLayout.setHorizontalGroup(
+            panelBiodataLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelBiodataLayout.createSequentialGroup()
+                .addGroup(panelBiodataLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panelBiodataLayout.createSequentialGroup()
                         .addGap(25, 25, 25)
                         .addComponent(jLabel4))
-                    .addGroup(jPanel10Layout.createSequentialGroup()
+                    .addGroup(panelBiodataLayout.createSequentialGroup()
                         .addGap(43, 43, 43)
                         .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -404,124 +431,124 @@ public class frame_biodataDiana extends javax.swing.JFrame {
                         .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(43, Short.MAX_VALUE))
         );
-        jPanel10Layout.setVerticalGroup(
-            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel10Layout.createSequentialGroup()
+        panelBiodataLayout.setVerticalGroup(
+            panelBiodataLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelBiodataLayout.createSequentialGroup()
                 .addGap(25, 25, 25)
                 .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(panelBiodataLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel11, javax.swing.GroupLayout.DEFAULT_SIZE, 427, Short.MAX_VALUE)
                     .addComponent(jPanel12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(39, Short.MAX_VALUE))
         );
 
-        jPanel8.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 40, 470, 570));
+        jPanel8.add(panelBiodata, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 40, 470, 570));
 
         jPanel17.setLayout(new java.awt.GridLayout(3, 1, 0, 16));
 
-        jPanel18.setBackground(new java.awt.Color(255, 255, 255));
+        panelKegemaran.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel37.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
         jLabel37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tksatu_kel2/icon/hobby.png"))); // NOI18N
         jLabel37.setText("Kegemaran");
         jLabel37.setIconTextGap(10);
 
-        jPanel19.setBackground(new java.awt.Color(224, 247, 250));
+        panelHobi2.setBackground(new java.awt.Color(224, 247, 250));
 
         jLabel57.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
         jLabel57.setText("Healing");
 
-        javax.swing.GroupLayout jPanel19Layout = new javax.swing.GroupLayout(jPanel19);
-        jPanel19.setLayout(jPanel19Layout);
-        jPanel19Layout.setHorizontalGroup(
-            jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel19Layout.createSequentialGroup()
+        javax.swing.GroupLayout panelHobi2Layout = new javax.swing.GroupLayout(panelHobi2);
+        panelHobi2.setLayout(panelHobi2Layout);
+        panelHobi2Layout.setHorizontalGroup(
+            panelHobi2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelHobi2Layout.createSequentialGroup()
                 .addGap(15, 15, 15)
                 .addComponent(jLabel57)
                 .addContainerGap(17, Short.MAX_VALUE))
         );
-        jPanel19Layout.setVerticalGroup(
-            jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel19Layout.createSequentialGroup()
+        panelHobi2Layout.setVerticalGroup(
+            panelHobi2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelHobi2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel57)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel20.setBackground(new java.awt.Color(224, 247, 250));
+        panelHobi1.setBackground(new java.awt.Color(224, 247, 250));
 
         jLabel58.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
         jLabel58.setText("Reading");
 
-        javax.swing.GroupLayout jPanel20Layout = new javax.swing.GroupLayout(jPanel20);
-        jPanel20.setLayout(jPanel20Layout);
-        jPanel20Layout.setHorizontalGroup(
-            jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel20Layout.createSequentialGroup()
+        javax.swing.GroupLayout panelHobi1Layout = new javax.swing.GroupLayout(panelHobi1);
+        panelHobi1.setLayout(panelHobi1Layout);
+        panelHobi1Layout.setHorizontalGroup(
+            panelHobi1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelHobi1Layout.createSequentialGroup()
                 .addGap(15, 15, 15)
                 .addComponent(jLabel58)
                 .addContainerGap(14, Short.MAX_VALUE))
         );
-        jPanel20Layout.setVerticalGroup(
-            jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel20Layout.createSequentialGroup()
+        panelHobi1Layout.setVerticalGroup(
+            panelHobi1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelHobi1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel58)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        javax.swing.GroupLayout jPanel18Layout = new javax.swing.GroupLayout(jPanel18);
-        jPanel18.setLayout(jPanel18Layout);
-        jPanel18Layout.setHorizontalGroup(
-            jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel18Layout.createSequentialGroup()
+        javax.swing.GroupLayout panelKegemaranLayout = new javax.swing.GroupLayout(panelKegemaran);
+        panelKegemaran.setLayout(panelKegemaranLayout);
+        panelKegemaranLayout.setHorizontalGroup(
+            panelKegemaranLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelKegemaranLayout.createSequentialGroup()
                 .addContainerGap(45, Short.MAX_VALUE)
-                .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(panelKegemaranLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel37)
-                    .addComponent(jPanel19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(panelHobi2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(panelHobi1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(39, 39, 39))
         );
-        jPanel18Layout.setVerticalGroup(
-            jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel18Layout.createSequentialGroup()
+        panelKegemaranLayout.setVerticalGroup(
+            panelKegemaranLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelKegemaranLayout.createSequentialGroup()
                 .addGap(14, 14, 14)
                 .addComponent(jLabel37)
                 .addGap(18, 18, 18)
-                .addComponent(jPanel19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(panelHobi2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jPanel20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(panelHobi1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 46, Short.MAX_VALUE))
         );
 
-        jPanel17.add(jPanel18);
+        jPanel17.add(panelKegemaran);
 
-        jPanel21.setBackground(new java.awt.Color(255, 255, 255));
+        panelKeterampilan.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel36.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
         jLabel36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tksatu_kel2/icon/star.png"))); // NOI18N
         jLabel36.setText("Keterampilan");
         jLabel36.setIconTextGap(10);
 
-        jPanel22.setBackground(new java.awt.Color(224, 247, 250));
+        panelSkil1.setBackground(new java.awt.Color(224, 247, 250));
 
         jLabel59.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
         jLabel59.setText("Microsoft Office");
 
-        javax.swing.GroupLayout jPanel22Layout = new javax.swing.GroupLayout(jPanel22);
-        jPanel22.setLayout(jPanel22Layout);
-        jPanel22Layout.setHorizontalGroup(
-            jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel22Layout.createSequentialGroup()
+        javax.swing.GroupLayout panelSkil1Layout = new javax.swing.GroupLayout(panelSkil1);
+        panelSkil1.setLayout(panelSkil1Layout);
+        panelSkil1Layout.setHorizontalGroup(
+            panelSkil1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelSkil1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel59)
                 .addGap(26, 26, 26))
         );
-        jPanel22Layout.setVerticalGroup(
-            jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel22Layout.createSequentialGroup()
+        panelSkil1Layout.setVerticalGroup(
+            panelSkil1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelSkil1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel59)
                 .addContainerGap())
@@ -540,64 +567,64 @@ public class frame_biodataDiana extends javax.swing.JFrame {
             .addGap(0, 0, Short.MAX_VALUE)
         );
 
-        jPanel24.setBackground(new java.awt.Color(224, 247, 250));
+        panelSkil2.setBackground(new java.awt.Color(224, 247, 250));
 
         jLabel60.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
         jLabel60.setText("Canva");
 
-        javax.swing.GroupLayout jPanel24Layout = new javax.swing.GroupLayout(jPanel24);
-        jPanel24.setLayout(jPanel24Layout);
-        jPanel24Layout.setHorizontalGroup(
-            jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel24Layout.createSequentialGroup()
+        javax.swing.GroupLayout panelSkil2Layout = new javax.swing.GroupLayout(panelSkil2);
+        panelSkil2.setLayout(panelSkil2Layout);
+        panelSkil2Layout.setHorizontalGroup(
+            panelSkil2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelSkil2Layout.createSequentialGroup()
                 .addGap(15, 15, 15)
                 .addComponent(jLabel60)
                 .addContainerGap(17, Short.MAX_VALUE))
         );
-        jPanel24Layout.setVerticalGroup(
-            jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel24Layout.createSequentialGroup()
+        panelSkil2Layout.setVerticalGroup(
+            panelSkil2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelSkil2Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel60)
                 .addContainerGap())
         );
 
-        javax.swing.GroupLayout jPanel21Layout = new javax.swing.GroupLayout(jPanel21);
-        jPanel21.setLayout(jPanel21Layout);
-        jPanel21Layout.setHorizontalGroup(
-            jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel21Layout.createSequentialGroup()
+        javax.swing.GroupLayout panelKeterampilanLayout = new javax.swing.GroupLayout(panelKeterampilan);
+        panelKeterampilan.setLayout(panelKeterampilanLayout);
+        panelKeterampilanLayout.setHorizontalGroup(
+            panelKeterampilanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelKeterampilanLayout.createSequentialGroup()
                 .addContainerGap(41, Short.MAX_VALUE)
-                .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(panelKeterampilanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jLabel36, javax.swing.GroupLayout.DEFAULT_SIZE, 130, Short.MAX_VALUE)
-                    .addGroup(jPanel21Layout.createSequentialGroup()
-                        .addComponent(jPanel24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(panelKeterampilanLayout.createSequentialGroup()
+                        .addComponent(panelSkil2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jPanel23, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addComponent(jPanel22, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(panelSkil1, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(29, 29, 29))
         );
-        jPanel21Layout.setVerticalGroup(
-            jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel21Layout.createSequentialGroup()
+        panelKeterampilanLayout.setVerticalGroup(
+            panelKeterampilanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelKeterampilanLayout.createSequentialGroup()
                 .addGap(15, 15, 15)
                 .addComponent(jLabel36)
                 .addGap(18, 18, 18)
-                .addComponent(jPanel22, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel21Layout.createSequentialGroup()
+                .addComponent(panelSkil1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(panelKeterampilanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panelKeterampilanLayout.createSequentialGroup()
                         .addGap(43, 43, 43)
                         .addComponent(jPanel23, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGap(86, 86, 86))
-                    .addGroup(jPanel21Layout.createSequentialGroup()
+                    .addGroup(panelKeterampilanLayout.createSequentialGroup()
                         .addGap(18, 18, 18)
-                        .addComponent(jPanel24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(panelSkil2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
 
-        jPanel17.add(jPanel21);
+        jPanel17.add(panelKeterampilan);
 
-        jPanel25.setBackground(new java.awt.Color(255, 255, 255));
+        panelGithub.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel35.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
         jLabel35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tksatu_kel2/icon/github.png"))); // NOI18N
@@ -606,22 +633,22 @@ public class frame_biodataDiana extends javax.swing.JFrame {
 
         jLabel38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tksatu_kel2/icon/qr diana.png"))); // NOI18N
 
-        javax.swing.GroupLayout jPanel25Layout = new javax.swing.GroupLayout(jPanel25);
-        jPanel25.setLayout(jPanel25Layout);
-        jPanel25Layout.setHorizontalGroup(
-            jPanel25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel25Layout.createSequentialGroup()
+        javax.swing.GroupLayout panelGithubLayout = new javax.swing.GroupLayout(panelGithub);
+        panelGithub.setLayout(panelGithubLayout);
+        panelGithubLayout.setHorizontalGroup(
+            panelGithubLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelGithubLayout.createSequentialGroup()
                 .addContainerGap(32, Short.MAX_VALUE)
                 .addComponent(jLabel38, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(30, 30, 30))
-            .addGroup(jPanel25Layout.createSequentialGroup()
+            .addGroup(panelGithubLayout.createSequentialGroup()
                 .addGap(44, 44, 44)
                 .addComponent(jLabel35)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        jPanel25Layout.setVerticalGroup(
-            jPanel25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel25Layout.createSequentialGroup()
+        panelGithubLayout.setVerticalGroup(
+            panelGithubLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelGithubLayout.createSequentialGroup()
                 .addGap(8, 8, 8)
                 .addComponent(jLabel35)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -629,7 +656,7 @@ public class frame_biodataDiana extends javax.swing.JFrame {
                 .addContainerGap(14, Short.MAX_VALUE))
         );
 
-        jPanel17.add(jPanel25);
+        jPanel17.add(panelGithub);
 
         jPanel8.add(jPanel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 40, 200, 570));
 
@@ -642,9 +669,12 @@ public class frame_biodataDiana extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void btnKembaliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnKembaliActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+        new frame_Dashboard().setVisible(true);
+        
+        dispose();
+    }//GEN-LAST:event_btnKembaliActionPerformed
 
     /**
      * @param args the command line arguments
@@ -656,14 +686,8 @@ public class frame_biodataDiana extends javax.swing.JFrame {
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
         try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ReflectiveOperationException | javax.swing.UnsupportedLookAndFeelException ex) {
-            logger.log(java.util.logging.Level.SEVERE, null, ex);
+            UIManager.setLookAndFeel(new FlatLightLaf());
+        } catch (UnsupportedLookAndFeelException unsupportedLookAndFeelException) {
         }
         //</editor-fold>
 
@@ -672,7 +696,7 @@ public class frame_biodataDiana extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton4;
+    private javax.swing.JButton btnKembali;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -722,21 +746,21 @@ public class frame_biodataDiana extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel12;
-    private javax.swing.JPanel jPanel15;
     private javax.swing.JPanel jPanel16;
     private javax.swing.JPanel jPanel17;
-    private javax.swing.JPanel jPanel18;
-    private javax.swing.JPanel jPanel19;
-    private javax.swing.JPanel jPanel20;
-    private javax.swing.JPanel jPanel21;
-    private javax.swing.JPanel jPanel22;
     private javax.swing.JPanel jPanel23;
-    private javax.swing.JPanel jPanel24;
-    private javax.swing.JPanel jPanel25;
     private javax.swing.JPanel jPanel8;
-    private javax.swing.JPanel jPanel9;
+    private javax.swing.JPanel panelBiodata;
+    private javax.swing.JPanel panelGithub;
+    private javax.swing.JPanel panelHobi1;
+    private javax.swing.JPanel panelHobi2;
+    private javax.swing.JPanel panelKegemaran;
+    private javax.swing.JPanel panelKeterampilan;
+    private javax.swing.JPanel panelNama;
+    private javax.swing.JPanel panelPeran;
+    private javax.swing.JPanel panelSkil1;
+    private javax.swing.JPanel panelSkil2;
     // End of variables declaration//GEN-END:variables
 }
