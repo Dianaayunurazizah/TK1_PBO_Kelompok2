@@ -205,6 +205,8 @@ public class frame_Dashboard extends javax.swing.JFrame {
 
         getContentPane().add(jPanel1, java.awt.BorderLayout.PAGE_START);
 
+        jPanel2.setMinimumSize(new java.awt.Dimension(1150, 645));
+        jPanel2.setPreferredSize(new java.awt.Dimension(1150, 645));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel3.setMinimumSize(new java.awt.Dimension(1066, 463));

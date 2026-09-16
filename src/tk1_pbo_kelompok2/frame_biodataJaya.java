@@ -165,6 +165,8 @@ public class frame_biodataJaya extends javax.swing.JFrame {
 
         getContentPane().add(jPanel1, java.awt.BorderLayout.PAGE_START);
 
+        jPanel4.setMinimumSize(new java.awt.Dimension(1150, 645));
+        jPanel4.setPreferredSize(new java.awt.Dimension(1150, 645));
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         panelNama.setBackground(new java.awt.Color(230, 244, 253));
