@@ -118,7 +118,6 @@ public class frame_biodataZanuba extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1150, 730));
-        setPreferredSize(new java.awt.Dimension(1150, 730));
 
         jPanel1.setBackground(new java.awt.Color(1, 57, 111));
         jPanel1.setPreferredSize(new java.awt.Dimension(1150, 85));
@@ -197,7 +196,7 @@ public class frame_biodataZanuba extends javax.swing.JFrame {
         );
 
         jLabel41.setFont(new java.awt.Font("Poppins", 0, 13)); // NOI18N
-        jLabel41.setText("gagal sesungguhnya adalah berhenti mencoba");
+        jLabel41.setText("gagal adalah berhenti mencoba");
 
         jLabel45.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tksatu_kel2/icon/petik kanan.png"))); // NOI18N
 
@@ -210,22 +209,19 @@ public class frame_biodataZanuba extends javax.swing.JFrame {
             .addGroup(panelNamaLayout.createSequentialGroup()
                 .addGroup(panelNamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panelNamaLayout.createSequentialGroup()
-                        .addContainerGap()
+                        .addGap(34, 34, 34)
                         .addComponent(jLabel46, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel41, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                        .addComponent(jLabel41)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel45, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(panelNamaLayout.createSequentialGroup()
-                        .addGroup(panelNamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(panelNamaLayout.createSequentialGroup()
-                                .addGap(71, 71, 71)
-                                .addComponent(jLabel39))
-                            .addGroup(panelNamaLayout.createSequentialGroup()
-                                .addGap(105, 105, 105)
-                                .addComponent(panelPeran, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
+                        .addGap(105, 105, 105)
+                        .addComponent(panelPeran, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(panelNamaLayout.createSequentialGroup()
+                        .addGap(29, 29, 29)
+                        .addComponent(jLabel39)))
+                .addContainerGap(43, Short.MAX_VALUE))
         );
         panelNamaLayout.setVerticalGroup(
             panelNamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -234,12 +230,16 @@ public class frame_biodataZanuba extends javax.swing.JFrame {
                 .addComponent(jLabel39)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(panelPeran, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10)
                 .addGroup(panelNamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel45, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel41, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel46, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(367, Short.MAX_VALUE))
+                    .addGroup(panelNamaLayout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel41, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(panelNamaLayout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addGroup(panelNamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel46, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel45, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(355, Short.MAX_VALUE))
         );
 
         jPanel2.add(panelNama, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 466, 330, 140));
@@ -546,9 +546,9 @@ public class frame_biodataZanuba extends javax.swing.JFrame {
                     .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(panelKeterampilanLayout.createSequentialGroup()
                         .addGap(26, 26, 26)
-                        .addGroup(panelKeterampilanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(panelSkil, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel36))))
+                        .addGroup(panelKeterampilanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel36)
+                            .addComponent(panelSkil, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(29, 29, 29))
         );
         panelKeterampilanLayout.setVerticalGroup(
