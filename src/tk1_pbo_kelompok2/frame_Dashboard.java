@@ -116,42 +116,42 @@ public class frame_Dashboard extends javax.swing.JFrame {
         panelAnggota1 = new javax.swing.JPanel();
         jLabel10 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        jLabel11 = new javax.swing.JLabel();
         panelEka = new javax.swing.JPanel();
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         panelAnggota2 = new javax.swing.JPanel();
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
+        jLabel12 = new javax.swing.JLabel();
         panelZanuba = new javax.swing.JPanel();
         jLabel19 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
         panelAnggota3 = new javax.swing.JPanel();
         jLabel21 = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
+        jLabel13 = new javax.swing.JLabel();
         panelHamid = new javax.swing.JPanel();
         jLabel23 = new javax.swing.JLabel();
         jLabel24 = new javax.swing.JLabel();
         panelAnggota4 = new javax.swing.JPanel();
         jLabel25 = new javax.swing.JLabel();
         jLabel26 = new javax.swing.JLabel();
-        jButton4 = new javax.swing.JButton();
+        jLabel14 = new javax.swing.JLabel();
         panelJaya = new javax.swing.JPanel();
         jLabel27 = new javax.swing.JLabel();
         jLabel28 = new javax.swing.JLabel();
         panelAnggota5 = new javax.swing.JPanel();
         jLabel29 = new javax.swing.JLabel();
         jLabel30 = new javax.swing.JLabel();
-        jButton5 = new javax.swing.JButton();
+        jLabel35 = new javax.swing.JLabel();
         panelFaiz = new javax.swing.JPanel();
         jLabel31 = new javax.swing.JLabel();
         jLabel32 = new javax.swing.JLabel();
         panelAnggota6 = new javax.swing.JPanel();
         jLabel33 = new javax.swing.JLabel();
         jLabel34 = new javax.swing.JLabel();
-        jButton6 = new javax.swing.JButton();
+        jLabel36 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
@@ -252,10 +252,7 @@ public class frame_Dashboard extends javax.swing.JFrame {
         jLabel9.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
         jLabel9.setText("202557201008");
 
-        jButton1.setBackground(new java.awt.Color(239, 248, 255));
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tk1_pbo_kelompok2/icon/arrow.png"))); // NOI18N
-        jButton1.setBorderPainted(false);
-        jButton1.setPreferredSize(new java.awt.Dimension(48, 48));
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tk1_pbo_kelompok2/icon/arrow.png"))); // NOI18N
 
         javax.swing.GroupLayout panelDianaLayout = new javax.swing.GroupLayout(panelDiana);
         panelDiana.setLayout(panelDianaLayout);
@@ -273,21 +270,21 @@ public class frame_Dashboard extends javax.swing.JFrame {
                     .addGroup(panelDianaLayout.createSequentialGroup()
                         .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(27, 27, 27))))
+                        .addComponent(jLabel11)
+                        .addGap(20, 20, 20))))
         );
         panelDianaLayout.setVerticalGroup(
             panelDianaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelDianaLayout.createSequentialGroup()
                 .addGroup(panelDianaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panelDianaLayout.createSequentialGroup()
-                        .addGap(22, 22, 22)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelDianaLayout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
+                        .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, 91, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
+                    .addGroup(panelDianaLayout.createSequentialGroup()
+                        .addGap(17, 17, 17)
+                        .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addComponent(jLabel8)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(panelAnggota1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -337,9 +334,7 @@ public class frame_Dashboard extends javax.swing.JFrame {
         jLabel18.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
         jLabel18.setText("202557201010");
 
-        jButton2.setBackground(new java.awt.Color(239, 248, 255));
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tk1_pbo_kelompok2/icon/arrow.png"))); // NOI18N
-        jButton2.setBorderPainted(false);
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tk1_pbo_kelompok2/icon/arrow.png"))); // NOI18N
 
         javax.swing.GroupLayout panelEkaLayout = new javax.swing.GroupLayout(panelEka);
         panelEka.setLayout(panelEkaLayout);
@@ -357,21 +352,21 @@ public class frame_Dashboard extends javax.swing.JFrame {
                     .addGroup(panelEkaLayout.createSequentialGroup()
                         .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(25, 25, 25))))
+                        .addComponent(jLabel12)
+                        .addGap(20, 20, 20))))
         );
         panelEkaLayout.setVerticalGroup(
             panelEkaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelEkaLayout.createSequentialGroup()
                 .addGroup(panelEkaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panelEkaLayout.createSequentialGroup()
-                        .addGap(22, 22, 22)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelEkaLayout.createSequentialGroup()
                         .addContainerGap(13, Short.MAX_VALUE)
                         .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
+                    .addGroup(panelEkaLayout.createSequentialGroup()
+                        .addGap(22, 22, 22)
+                        .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addComponent(jLabel16)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(panelAnggota2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -421,9 +416,7 @@ public class frame_Dashboard extends javax.swing.JFrame {
         jLabel22.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
         jLabel22.setText("202557201042");
 
-        jButton3.setBackground(new java.awt.Color(239, 248, 255));
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tk1_pbo_kelompok2/icon/arrow.png"))); // NOI18N
-        jButton3.setBorderPainted(false);
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tk1_pbo_kelompok2/icon/arrow.png"))); // NOI18N
 
         javax.swing.GroupLayout panelZanubaLayout = new javax.swing.GroupLayout(panelZanuba);
         panelZanuba.setLayout(panelZanubaLayout);
@@ -431,31 +424,31 @@ public class frame_Dashboard extends javax.swing.JFrame {
             panelZanubaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelZanubaLayout.createSequentialGroup()
                 .addGap(26, 26, 26)
-                .addGroup(panelZanubaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(panelZanubaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(panelZanubaLayout.createSequentialGroup()
                         .addGroup(panelZanubaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel22)
                             .addComponent(jLabel20)
                             .addComponent(panelAnggota3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap(38, Short.MAX_VALUE))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(panelZanubaLayout.createSequentialGroup()
                         .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(27, 27, 27))))
+                        .addGap(165, 165, 165)
+                        .addComponent(jLabel13)
+                        .addGap(26, 26, 26))))
         );
         panelZanubaLayout.setVerticalGroup(
             panelZanubaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelZanubaLayout.createSequentialGroup()
                 .addGroup(panelZanubaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panelZanubaLayout.createSequentialGroup()
-                        .addGap(22, 22, 22)
-                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelZanubaLayout.createSequentialGroup()
                         .addContainerGap(13, Short.MAX_VALUE)
                         .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
+                    .addGroup(panelZanubaLayout.createSequentialGroup()
+                        .addGap(26, 26, 26)
+                        .addComponent(jLabel13)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addComponent(jLabel20)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(panelAnggota3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -505,9 +498,7 @@ public class frame_Dashboard extends javax.swing.JFrame {
         jLabel26.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
         jLabel26.setText("202557201020");
 
-        jButton4.setBackground(new java.awt.Color(239, 248, 255));
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tk1_pbo_kelompok2/icon/arrow.png"))); // NOI18N
-        jButton4.setBorderPainted(false);
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tk1_pbo_kelompok2/icon/arrow.png"))); // NOI18N
 
         javax.swing.GroupLayout panelHamidLayout = new javax.swing.GroupLayout(panelHamid);
         panelHamid.setLayout(panelHamidLayout);
@@ -527,21 +518,21 @@ public class frame_Dashboard extends javax.swing.JFrame {
                     .addGroup(panelHamidLayout.createSequentialGroup()
                         .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(26, 26, 26))))
+                        .addComponent(jLabel14)
+                        .addGap(19, 19, 19))))
         );
         panelHamidLayout.setVerticalGroup(
             panelHamidLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelHamidLayout.createSequentialGroup()
                 .addGroup(panelHamidLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panelHamidLayout.createSequentialGroup()
-                        .addGap(21, 21, 21)
-                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelHamidLayout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jLabel23, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)))
+                        .addComponent(jLabel23, javax.swing.GroupLayout.DEFAULT_SIZE, 85, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED))
+                    .addGroup(panelHamidLayout.createSequentialGroup()
+                        .addGap(22, 22, 22)
+                        .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addComponent(jLabel24)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(panelAnggota4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -591,9 +582,7 @@ public class frame_Dashboard extends javax.swing.JFrame {
         jLabel30.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
         jLabel30.setText("202557201016");
 
-        jButton5.setBackground(new java.awt.Color(239, 248, 255));
-        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tk1_pbo_kelompok2/icon/arrow.png"))); // NOI18N
-        jButton5.setBorderPainted(false);
+        jLabel35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tk1_pbo_kelompok2/icon/arrow.png"))); // NOI18N
 
         javax.swing.GroupLayout panelJayaLayout = new javax.swing.GroupLayout(panelJaya);
         panelJaya.setLayout(panelJayaLayout);
@@ -611,21 +600,21 @@ public class frame_Dashboard extends javax.swing.JFrame {
                     .addGroup(panelJayaLayout.createSequentialGroup()
                         .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(23, 23, 23))))
+                        .addComponent(jLabel35)
+                        .addGap(18, 18, 18))))
         );
         panelJayaLayout.setVerticalGroup(
             panelJayaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelJayaLayout.createSequentialGroup()
                 .addGroup(panelJayaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panelJayaLayout.createSequentialGroup()
-                        .addGap(21, 21, 21)
-                        .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelJayaLayout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addContainerGap(10, Short.MAX_VALUE)
                         .addComponent(jLabel27)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED))
+                    .addGroup(panelJayaLayout.createSequentialGroup()
+                        .addGap(23, 23, 23)
+                        .addComponent(jLabel35, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addComponent(jLabel28)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(panelAnggota5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -675,9 +664,7 @@ public class frame_Dashboard extends javax.swing.JFrame {
         jLabel34.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
         jLabel34.setText("202557201012");
 
-        jButton6.setBackground(new java.awt.Color(239, 248, 255));
-        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tk1_pbo_kelompok2/icon/arrow.png"))); // NOI18N
-        jButton6.setBorderPainted(false);
+        jLabel36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tk1_pbo_kelompok2/icon/arrow.png"))); // NOI18N
 
         javax.swing.GroupLayout panelFaizLayout = new javax.swing.GroupLayout(panelFaiz);
         panelFaiz.setLayout(panelFaizLayout);
@@ -695,21 +682,21 @@ public class frame_Dashboard extends javax.swing.JFrame {
                     .addGroup(panelFaizLayout.createSequentialGroup()
                         .addComponent(jLabel31, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(26, 26, 26))))
+                        .addComponent(jLabel36)
+                        .addGap(21, 21, 21))))
         );
         panelFaizLayout.setVerticalGroup(
             panelFaizLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelFaizLayout.createSequentialGroup()
                 .addGroup(panelFaizLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panelFaizLayout.createSequentialGroup()
-                        .addGap(22, 22, 22)
-                        .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelFaizLayout.createSequentialGroup()
                         .addContainerGap(13, Short.MAX_VALUE)
                         .addComponent(jLabel31, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
+                    .addGroup(panelFaizLayout.createSequentialGroup()
+                        .addGap(23, 23, 23)
+                        .addComponent(jLabel36, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addComponent(jLabel32)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(panelAnggota6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -737,6 +724,7 @@ public class frame_Dashboard extends javax.swing.JFrame {
         getContentPane().add(jPanel2, java.awt.BorderLayout.CENTER);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void panelDianaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelDianaMouseClicked
@@ -803,14 +791,12 @@ public class frame_Dashboard extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
@@ -833,6 +819,8 @@ public class frame_Dashboard extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;

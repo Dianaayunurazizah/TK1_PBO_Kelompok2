@@ -46,6 +46,8 @@ public class frame_Awal extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(1, 57, 111));
+        jPanel1.setMinimumSize(new java.awt.Dimension(1150, 730));
+        jPanel1.setPreferredSize(new java.awt.Dimension(1150, 730));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tk1_pbo_kelompok2/icon/logo itm.png"))); // NOI18N
 
@@ -126,6 +128,7 @@ public class frame_Awal extends javax.swing.JFrame {
         getContentPane().add(jPanel1, java.awt.BorderLayout.CENTER);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnMasukActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMasukActionPerformed
