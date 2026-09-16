@@ -164,6 +164,8 @@ public class frame_biodataHamid extends javax.swing.JFrame {
 
         getContentPane().add(jPanel1, java.awt.BorderLayout.PAGE_START);
 
+        jPanel2.setMinimumSize(new java.awt.Dimension(1150, 645));
+        jPanel2.setPreferredSize(new java.awt.Dimension(1150, 645));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         panelNama.setBackground(new java.awt.Color(230, 244, 253));
