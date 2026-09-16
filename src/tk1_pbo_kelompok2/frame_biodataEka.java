@@ -4,6 +4,13 @@
  */
 package tk1_pbo_kelompok2;
 
+import com.formdev.flatlaf.FlatLightLaf;
+import com.formdev.flatlaf.ui.FlatLineBorder;
+import java.awt.Color;
+import java.awt.Insets;
+import javax.swing.JPanel;
+import javax.swing.UIManager;
+import javax.swing.UnsupportedLookAndFeelException;
 /**
  *
  * @author Acer
@@ -17,7 +24,24 @@ public class frame_biodataEka extends javax.swing.JFrame {
      */
     public frame_biodataEka() {
         initComponents();
+        
+        panelRounded(panelNama);
+        panelRounded(panelBiodata);
+        panelRounded(panelKegemaran);
+        panelRounded(panelKeterampilan);
+        panelRounded(panelGithub);
+        panelRounded(panelPeran);
+        panelRounded(panelHobbi);
+        panelRounded(panelSkil1);
+        panelRounded(panelSkill2);
     }
+    public void panelRounded(JPanel panel){
+        
+        panel.setBorder(new FlatLineBorder(
+                new Insets(0, 0, 0, 0), new Color(255, 255, 255), 1f, 20
+        ));
+    }
+
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -83,10 +107,10 @@ public class frame_biodataEka extends javax.swing.JFrame {
         jLabel43 = new javax.swing.JLabel();
         panelKeterampilan = new javax.swing.JPanel();
         jLabel36 = new javax.swing.JLabel();
-        panelSkill1 = new javax.swing.JPanel();
+        panelSkil1 = new javax.swing.JPanel();
         jLabel42 = new javax.swing.JLabel();
         panelSkill2 = new javax.swing.JPanel();
-        jLabel47 = new javax.swing.JLabel();
+        jlabel = new javax.swing.JLabel();
         panelGithub = new javax.swing.JPanel();
         jLabel35 = new javax.swing.JLabel();
         jLabel38 = new javax.swing.JLabel();
@@ -475,23 +499,23 @@ public class frame_biodataEka extends javax.swing.JFrame {
         jLabel36.setText("Keterampilan");
         jLabel36.setIconTextGap(10);
 
-        panelSkill1.setBackground(new java.awt.Color(224, 247, 250));
+        panelSkil1.setBackground(new java.awt.Color(224, 247, 250));
 
         jLabel42.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
         jLabel42.setText("Berfikir Strategi");
 
-        javax.swing.GroupLayout panelSkill1Layout = new javax.swing.GroupLayout(panelSkill1);
-        panelSkill1.setLayout(panelSkill1Layout);
-        panelSkill1Layout.setHorizontalGroup(
-            panelSkill1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelSkill1Layout.createSequentialGroup()
+        javax.swing.GroupLayout panelSkil1Layout = new javax.swing.GroupLayout(panelSkil1);
+        panelSkil1.setLayout(panelSkil1Layout);
+        panelSkil1Layout.setHorizontalGroup(
+            panelSkil1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelSkil1Layout.createSequentialGroup()
                 .addGap(14, 14, 14)
                 .addComponent(jLabel42)
                 .addContainerGap(12, Short.MAX_VALUE))
         );
-        panelSkill1Layout.setVerticalGroup(
-            panelSkill1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelSkill1Layout.createSequentialGroup()
+        panelSkil1Layout.setVerticalGroup(
+            panelSkil1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelSkil1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel42)
                 .addContainerGap())
@@ -499,9 +523,9 @@ public class frame_biodataEka extends javax.swing.JFrame {
 
         panelSkill2.setBackground(new java.awt.Color(224, 247, 250));
 
-        jLabel47.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
-        jLabel47.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel47.setText("Public Speaking");
+        jlabel.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
+        jlabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jlabel.setText("Public Speaking");
 
         javax.swing.GroupLayout panelSkill2Layout = new javax.swing.GroupLayout(panelSkill2);
         panelSkill2.setLayout(panelSkill2Layout);
@@ -509,14 +533,14 @@ public class frame_biodataEka extends javax.swing.JFrame {
             panelSkill2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelSkill2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel47, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jlabel, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         panelSkill2Layout.setVerticalGroup(
             panelSkill2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelSkill2Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel47)
+                .addComponent(jlabel)
                 .addContainerGap())
         );
 
@@ -532,7 +556,7 @@ public class frame_biodataEka extends javax.swing.JFrame {
                         .addGap(6, 6, 6)
                         .addGroup(panelKeterampilanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(panelSkill2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(panelSkill1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(panelSkil1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(22, Short.MAX_VALUE))
         );
         panelKeterampilanLayout.setVerticalGroup(
@@ -541,7 +565,7 @@ public class frame_biodataEka extends javax.swing.JFrame {
                 .addGap(15, 15, 15)
                 .addComponent(jLabel36)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(panelSkill1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(panelSkil1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(panelSkill2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(47, Short.MAX_VALUE))
@@ -596,6 +620,9 @@ public class frame_biodataEka extends javax.swing.JFrame {
 
     private void btnKembaliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnKembaliActionPerformed
         // TODO add your handling code here:
+         new frame_Dashboard().setVisible(true);
+        
+        dispose();
     }//GEN-LAST:event_btnKembaliActionPerformed
 
     /**
@@ -608,14 +635,8 @@ public class frame_biodataEka extends javax.swing.JFrame {
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
         try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ReflectiveOperationException | javax.swing.UnsupportedLookAndFeelException ex) {
-            logger.log(java.util.logging.Level.SEVERE, null, ex);
+            UIManager.setLookAndFeel(new FlatLightLaf());
+        } catch (UnsupportedLookAndFeelException unsupportedLookAndFeelException) {
         }
         //</editor-fold>
 
@@ -666,7 +687,6 @@ public class frame_biodataEka extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel44;
     private javax.swing.JLabel jLabel45;
     private javax.swing.JLabel jLabel46;
-    private javax.swing.JLabel jLabel47;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
@@ -678,6 +698,7 @@ public class frame_biodataEka extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel9;
+    private javax.swing.JLabel jlabel;
     private javax.swing.JPanel panelBiodata;
     private javax.swing.JPanel panelGithub;
     private javax.swing.JPanel panelHobbi;
@@ -685,7 +706,7 @@ public class frame_biodataEka extends javax.swing.JFrame {
     private javax.swing.JPanel panelKeterampilan;
     private javax.swing.JPanel panelNama;
     private javax.swing.JPanel panelPeran;
-    private javax.swing.JPanel panelSkill1;
+    private javax.swing.JPanel panelSkil1;
     private javax.swing.JPanel panelSkill2;
     // End of variables declaration//GEN-END:variables
 }
