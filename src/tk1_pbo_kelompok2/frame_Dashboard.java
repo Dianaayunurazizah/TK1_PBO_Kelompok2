@@ -735,6 +735,7 @@ public class frame_Dashboard extends javax.swing.JFrame {
         getContentPane().add(jPanel2, java.awt.BorderLayout.CENTER);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void panelDianaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelDianaMouseClicked
